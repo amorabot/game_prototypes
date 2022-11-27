@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
+
+<script src = "Subject.js"></script>
+<script src = "Objetos/Cacto.js"></script>
+<script src = "Objetos/Cereja.js"></script>
+<script src = "Objetos/Fantasma.js"></script>
+<script src = "Objetos/Doce.js"></script>
+<script src = "Card.js"></script>
+<script src = "InputHandler.js"></script>
+<script src = "Observer.js"></script>
+<script src = "Utils.js"></script>
+<script src = "Collection.js"></script>
+<script src = "GrabbingSystem.js"></script>
+<script src = "Placar.js"></script>
+<script src = "Board.js"></script>
+
+<script>
+window.onload = function() {
+	var gameBoard = new Board( // é criado um novo tabuleiro, que será jogado com a seguinte coleção de peças:
+		new Collection( //coleção anônima contendo os seguintes objetos:
+			new Cacto(), new Cereja(), new Doce(), new Fantasma(), "Standart")); //todos os objetos contidos na coleção Collection estão na pasta de projeto "Objetos"
+}
+</script>
+</body>
+</html>
